@@ -10,11 +10,11 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.redislabs</groupId>
-	<artifactId>handsonlab-parent</artifactId>
+	<artifactId>handsonlab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Hands-On Lab</name>
-	<description>Redis Labs Hands-On Lab Parent Project</description>
+	<description>Redis Labs Hands-On Lab</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -30,6 +30,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
 		</dependency>
 	</dependencies>
 

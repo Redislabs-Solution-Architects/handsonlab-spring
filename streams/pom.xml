@@ -5,12 +5,18 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.redislabs</groupId>
-		<artifactId>handsonlab-parent</artifactId>
+		<artifactId>handsonlab</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>handsonlab-streams</artifactId>
 	<name>Hands-On Lab Streams</name>
-	<description>Redis Las Hands-On Lab Module 3: Streams</description>
+	<description>Redis Las Hands-On Lab Module 3: Streams Parent Project</description>
+	<packaging>pom</packaging>
 
+	<modules>
+		<module>streams-producer</module>
+		<module>streams-consumer</module>
+	</modules>
+	
 
 </project>
