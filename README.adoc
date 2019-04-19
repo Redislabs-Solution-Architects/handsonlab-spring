@@ -1,0 +1,25 @@
+= Redis Enterprise Hands-On Lab
+
+== Requirements
+You need Java 8 (*JDK*, not JRE) or higher.
+
+To edit the source code you might also want to use an IDE like Spring Tools (recommended), Eclipse or IntelliJ IDEA.
+
+== Setup
+```
+git clone git clone https://github.com/Redislabs-Solution-Architects/handsonlab-spring.git
+cd handsonlab-spring
+```
+
+== Running a module
+```
+cd <module>
+./mvnw spring-boot:run
+```
+ 
+=== Reference Documentation
+For further reference, please consider the following sections:
+
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+
+
