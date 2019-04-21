@@ -1,8 +1,8 @@
-= Redis Enterprise Hands-On Lab
+= Redis Enterprise Hands-On Lab with Spring
 ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 
 == Requirements
-You need Java 8 (*JDK*, not JRE) or higher.
+You need Java 8 or higher (*JDK*, not JRE).
 
 To edit the source code you might also want to use an IDE like Spring Tools (recommended), Eclipse or IntelliJ IDEA.
 
