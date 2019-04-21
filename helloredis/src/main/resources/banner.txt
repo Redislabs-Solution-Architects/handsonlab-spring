@@ -1,0 +1,18 @@
+${AnsiColor.RED}               _._                ${AnsiColor.DEFAULT}	
+${AnsiColor.RED}          _.-``${AnsiColor.WHITE}__${AnsiColor.RED} ''-._       	  ${AnsiColor.DEFAULT}                _ _     _       _         
+${AnsiColor.RED}     _.-``    ${AnsiColor.WHITE}`.  `_.${AnsiColor.RED}  ''-._      ${AnsiColor.DEFAULT}               | (_)   | |     | |        
+${AnsiColor.RED} .-`` ${AnsiColor.WHITE}.-```.  ```\/    _.,_ ${AnsiColor.RED}''-._ ${AnsiColor.DEFAULT}   _ __ ___  __| |_ ___| | __ _| |__  ___ 
+${AnsiColor.RED}(    ${AnsiColor.WHITE}'      ,       .-`  | `,${AnsiColor.RED}    )${AnsiColor.DEFAULT}  | '__/ _ \/ _` | / __| |/ _` | '_ \/ __|
+${AnsiColor.RED}|`-._${AnsiColor.WHITE}`-...-` __...-.``-._|'`${AnsiColor.RED} _.-'|${AnsiColor.DEFAULT}  | | |  __/ (_| | \__ \ | (_| | |_) \__ \
+${AnsiColor.RED}|    `-._   ${AnsiColor.WHITE}`._    /     _${AnsiColor.RED}.-'    |${AnsiColor.DEFAULT}  |_|  \___|\__,_|_|___/_|\__,_|_.__/|___/
+${AnsiColor.RED} `-._    `-._  ${AnsiColor.WHITE}`-./ ${AnsiColor.RED} _.-'    _.-' ${AnsiColor.DEFAULT}	                                         
+${AnsiColor.RED}|`-._`-._    `-.__.-'    _.-'_.-'|${AnsiColor.DEFAULT}   ╦ ╦╔═╗╔╦╗╔═╗  ╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╔═╗ 
+${AnsiColor.RED}|    `-._`-._        _.-'_.-'    |${AnsiColor.DEFAULT}   ╠═╣║ ║║║║║╣   ║ ║╠╣   ╠╦╝║╣  ║║║╚═╗ 
+${AnsiColor.RED} `-._    `-._`-.__.-'_.-'    _.-' ${AnsiColor.DEFAULT}   ╩ ╩╚═╝╩ ╩╚═╝  ╚═╝╚    ╩╚═╚═╝═╩╝╩╚═╝ 
+${AnsiColor.RED}|`-._`-._    `-.__.-'    _.-'_.-'|${AnsiColor.DEFAULT}	
+${AnsiColor.RED}|    `-._`-._        _.-'_.-'    |${AnsiColor.DEFAULT}	
+${AnsiColor.RED} `-._    `-._`-.__.-'_.-'    _.-' ${AnsiColor.DEFAULT}                                   
+${AnsiColor.RED}     `-._    `-.__.-'    _.-'     ${AnsiColor.DEFAULT}  Redis Enterprise Hands-On Lab${application.formatted-version}                                 
+${AnsiColor.RED}         `-._        _.-'         ${AnsiColor.DEFAULT}      
+${AnsiColor.RED}             `-.__.-'             ${AnsiColor.DEFAULT}     
+

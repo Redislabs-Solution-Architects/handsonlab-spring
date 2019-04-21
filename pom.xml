@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.redislabs</groupId>
 	<artifactId>handsonlab</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Hands-On Lab</name>
 	<description>Redis Labs Hands-On Lab</description>
@@ -23,7 +23,7 @@
 	<modules>
 		<module>helloredis</module>
 		<module>streams</module>
-		<module>search</module>
+		<module>json</module>
 	</modules>
 
 	<dependencies>

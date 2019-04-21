@@ -22,16 +22,13 @@ public class HelloRedisApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		// Step 1: Set the hello message in Redis
-		// TODO Add code here to set the hello message
+		// TODO Set the hello message in Redis
 
-		// Step 2: Retrieve the hello message from Redis
-		// TODO Change the code below to get the hello message from Redis
-		String message = "Add code to get the message from Redis";
+		// TODO Retrieve the hello message from Redis
+		String message = "Not yet implemented";
 		log.info(message);
 
-		// Step 3: Increment our run counter
-		// TODO Change the code below to track the number of times the app has been run
+		// TODO Increment a counter to keep track of the number of runs
 		long count = 0;
 		log.info("Hello Redis has been run {} times", count);
 	}

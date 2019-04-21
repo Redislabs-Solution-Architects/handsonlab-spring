@@ -1,4 +1,4 @@
-package com.redislabs.handsonlab;
+package com.redislabs.handsonlab.solution;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,25 +11,31 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.sync.RedisCommands;
+import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
-public class RedisStreamsProducerApplication implements ApplicationRunner {
+@Slf4j
+public class ProducerSolution implements ApplicationRunner {
 
 	@Autowired
 	StatefulRedisConnection<String, String> connection;
 
 	public static void main(String[] args) {
-		SpringApplication.run(RedisStreamsProducerApplication.class, args);
+		SpringApplication.run(ProducerSolution.class, args);
 	}
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		RedisCommands<String, String> commands = connection.sync();
+		int index = 1;
 		while (true) {
-			Map<String, String> fields = new HashMap<>();
-			fields.put("field1", "value1");
-			commands.xadd("my-stream", fields);
-			Thread.sleep(5000);
+			Map<String, String> message = new HashMap<>();
+			message.put("field1", "value" + index);
+			message.put("field2", String.valueOf(index));
+			String messageId = commands.xadd("my-stream", message);
+			log.info("Sent message {} with ID {}", message, messageId);
+			Thread.sleep(3000);
+			index++;
 		}
 	}
 

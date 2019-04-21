@@ -1,4 +1,5 @@
 = Redis Enterprise Hands-On Lab
+ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 
 == Requirements
 You need Java 8 (*JDK*, not JRE) or higher.
@@ -7,19 +8,27 @@ To edit the source code you might also want to use an IDE like Spring Tools (rec
 
 == Setup
 ```
-git clone git clone https://github.com/Redislabs-Solution-Architects/handsonlab-spring.git
-cd handsonlab-spring
+$ git clone https://github.com/Redislabs-Solution-Architects/handsonlab-spring.git
+$ cd handsonlab-spring
 ```
 
 == Running a module
 ```
-cd <module>
-./mvnw spring-boot:run
+$ cd <module>
+$ ./mvnw spring-boot:run
 ```
+
+== Modules
+
+=== link:helloredis/HELP{outfilesuffix}[Hello Redis]
+
+=== link:streams/HELP{outfilesuffix}[Streams]
+
  
-=== Reference Documentation
+== Reference Documentation
 For further reference, please consider the following sections:
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* https://maven.apache.org/guides/index.html[Official Apache Maven documentation]
+* https://spring.io/projects/spring-data-redis[Spring Data Redis]
 
 

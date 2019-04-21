@@ -1,5 +1,7 @@
 = Hands-On Session: Streams
 
+== Overview
+
 This exercise demonstrates the Redis Streams data structure by building a simulation of messages
 being sent from producers to consumers in response to events happening on a website.  For this
 session, you will need to review the Redis Streams commands, create a publisher that sends messages
@@ -7,8 +9,8 @@ via Redis, then create a set of consumers to receive and process the messages.
 
 This directory contains two modules to use for the exercise:
 
-* The `streams-producer` module contains the message producer application
-* The `streams-consumer` module contains the message consumer application
+- The `streams-producer` module contains the message producer application
+- The `streams-consumer` module contains the message consumer application
 
 We have added code to manage multiple producers and consumers running locally 
 and to help create simulated messages.  If you get stuck, files ending with `Solution.java` implement our solution to 
@@ -21,30 +23,30 @@ questions of the training staff as well.
 
 Please review the following documentation on Redis Streams to get started:
 
-* https://redis.io/topics/streams-intro[Introduction to Redis Streams]
-* https://www.javacodegeeks.com/2018/05/a-first-look-at-redis-streams-and-how-to-use-them-with-java.html[A first look at Redis Streams and how to use them with Java] 
+- https://redis.io/topics/streams-intro[Introduction to Redis Streams]
+- https://www.javacodegeeks.com/2018/05/a-first-look-at-redis-streams-and-how-to-use-them-with-java.html[A first look at Redis Streams and how to use them with Java] 
 
 == Part Two: Create a Producer
 
-1. Modify the `streams-producer` code to send messages via Redis in a loop
-2. Run the producer using your connection information
-`mvnw spring-boot:run -Dspring.redis.host=<host> -Dspring.redis.port=<port>
+. Modify the `streams-producer` code to send messages via Redis in a loop
+. Run the producer using your connection information
+
+ $ mvnw spring-boot:run -Dspring.redis.host=<host> -Dspring.redis.port=<port>
 
 == Part Three: Create a Consumer
 
-1. Prior to modifying `streams-consumer`, run the program and see what happens
-2. Update the file with your connection information
-3. Add code to read a message from the appropriate stream
-4. Start the producer application
-5. Run a single consumer and look for messages received.
-6. Run a second consumer and watch the distribution of messages between the two application instances.
+. Open the `streams-consumer` module
+. Add code to read a message from the appropriate stream
+. Run a single consumer and look for messages received.
+. Run a second consumer and watch the distribution of messages between the two application instances.
 
 == Part Four: Using Consumer Groups
 
-1. Modify the `streams-consumer` code to listen for messages in a consumer group. Hint: use the `xreadgroup` command.
-2. Start two consumers and look at the message distribution. What's different? 
+. Modify the `streams-consumer` code to listen for messages in a consumer group.
+. Start two consumers and look at the message distribution. What's different? 
 
-=== Further Activities
+TIP: Read the section on consumer groups at the end of this article: https://www.javacodegeeks.com/2018/05/a-first-look-at-redis-streams-and-how-to-use-them-with-java.html[A first look at Redis Streams and how to use them with Java]
 
-1. Why do you think we have separate producer and consumer applications?
-2. How can you test this code without the producer code?
+.Further Activities
+- Why do you think we have separate producer and consumer applications?
+- How can you test this code without the producer code?

@@ -1,4 +1,4 @@
-package com.redislabs.handsonlab;
+package com.redislabs.handsonlab.solution;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -20,15 +20,15 @@ public class HelloRedisSolution implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		// Step 1: Set the hello message in Redis
+		// Set the hello message in Redis
 		template.opsForValue().set("message", "Hello Redis!");
 
-		// Step 2: Retrieve the hello message from Redis
+		// Retrieve the hello message from Redis
 		String message = template.opsForValue().get("message");
 		log.info(message);
 
-		// Step 3: Increment our run counter
-		long count = template.opsForValue().increment("count");
+		// Increment a counter to keep track of the number of runs
+		long count = template.opsForValue().increment("counter");
 		log.info("Hello Redis has been run {} times", count);
 	}
 
