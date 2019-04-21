@@ -8,7 +8,7 @@ which connects to Redis, writes a message to the database, reads that message ba
 displays the message to the end user.  After that you will modify the program to add a 
 counter to track the number of times the program executes. 
 
-The file `src/main/java/HelloRedisApplication.java` is a skeleton program to get you started.  It provides and explains
+The file `HelloRedisApplication.java` is a skeleton program to get you started.  It provides and explains
 the basic code needed to set up a connection to Redis.  If you get stuck `HelloRedisSolution.java`
 implements a solution to the exercise.  Feel free to study it or get help from the training staff.
 
