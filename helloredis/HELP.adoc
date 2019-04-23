@@ -1,4 +1,5 @@
 = Hands-On Module: Hello Redis
+:source-highlighter: coderay
 
 == Overview 
 
@@ -18,12 +19,16 @@ questions of the training staff as well.
 == Part One
 
 . Prior to modifying `HelloRedisApplication.java`, run the app and see what happens:
-
- $ mvnw spring-boot:run
+[source,shell]
+----
+mvnw spring-boot:run
+----
  
 . Add connection parameters for your Redis database and verify you can connect to it:  
-
- $ mvnw spring-boot:run -Dspring.redis.host=<host> -Dspring.redis.port=<port>
+[source,shell]
+----
+mvnw spring-boot:run -Dspring.redis.host=<host> -Dspring.redis.port=<port>
+----
  
 . Add code to the program to store a Hello World message in Redis
 . Modify the code that prints the message to read the message from Redis instead of a constant string

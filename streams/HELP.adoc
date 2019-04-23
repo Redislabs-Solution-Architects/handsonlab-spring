@@ -1,4 +1,5 @@
 = Hands-On Session: Streams
+:source-highlighter: coderay
 
 == Overview
 
@@ -31,7 +32,10 @@ Please review the following documentation on Redis Streams to get started:
 . Modify the `streams-producer` code to send messages via Redis in a loop
 . Run the producer using your connection information
 
- $ mvnw spring-boot:run -Dspring.redis.host=<host> -Dspring.redis.port=<port>
+[source,shell]
+----
+mvnw spring-boot:run -Dspring.redis.host=<host> -Dspring.redis.port=<port>
+----
 
 == Part Three: Create a Consumer
 

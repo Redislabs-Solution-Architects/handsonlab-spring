@@ -1,0 +1,28 @@
+= Hands-On Session: RediSearch
+
+== Overview
+
+This exercise demonstrates using both a module and specifically, RediSearch. 
+
+You will learn how to execute non-standard Redis commands directly from Java and learn a few commands to run full text searches directly from within Redis.
+
+This directory contains files to use for the exercise.  The `RediSearchApplication` class provides a skeleton to
+help you get started. If you get stuck, files in the `solution` package implement our solution to the exercise.
+Feel free to study it or ask questions of the training staff.
+
+Although this is a hands-on exercise, we want to encourage you to use this time to ask  
+questions of the training staff as well.
+
+== Part One: Review RediSearch Documentation
+
+Please review the following documentation on redis.io to get started:
+
+- https://oss.redislabs.com/redisearch/Quick_Start.html[RediSearch Quickstart]
+
+== Part Two: Run the ReDiscogs demo
+
+Clone the https://github.com/Redislabs-Solution-Architects/rediscogs[ReDiscogs] repository and follow instructions to run the demo locally, i.e. you can skip Docker-based RediSearch instance step but instead connect to your Redis instance which has the RediSearch module enabled.
+
+TIP: This is a Spring app so you can use the same `spring.redis.*` parameters you used previously. 
+
+ 

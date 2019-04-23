@@ -6,17 +6,14 @@ This exercise demonstrates using both a module and specifically, RedisJSON.
 
 You will learn how to execute non-standard Redis commands directly from Java and learn a few commands to manipulate JSON directly from within Redis.
 
-This directory contains files to use for the exercise.  The `RedisJSON` class provides a skeleton to
-help you get started.  We have added code to manage multiple publishers and subscribers running locally 
-and to help create simulated messages.  If you get stuck, files in the `solution` package implement our solution to 
+This directory contains files to use for the exercise.  The `RedisJSONApplication` class provides a skeleton to
+help you get started. If you get stuck, files in the `solution` package implement our solution to 
 the exercise.  Feel free to study it or ask questions of the training staff.
 
 Although this is a hands-on exercise, we want to encourage you to use this time to ask 
 questions of the training staff as well.
 
 == Part One: Review RedisJSON Documentation
-
-=== Instructions
 
 Please review the following documentation on redis.io to get started:
 
