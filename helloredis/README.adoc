@@ -1,4 +1,4 @@
-= Hands-On Module: Hello Redis
+= Hands-On Session: Hello Redis
 :source-highlighter: coderay
 
 == Overview 
