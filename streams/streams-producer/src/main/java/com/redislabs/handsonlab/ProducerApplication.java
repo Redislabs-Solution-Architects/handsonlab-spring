@@ -1,4 +1,4 @@
-package com.redislabs.handsonlab.solution;
+package com.redislabs.handsonlab;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,13 +15,13 @@ import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
 @Slf4j
-public class ProducerSolution implements ApplicationRunner {
+public class ProducerApplication implements ApplicationRunner {
 
 	@Autowired
 	StatefulRedisConnection<String, String> connection;
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProducerSolution.class, args);
+		SpringApplication.run(ProducerApplication.class, args);
 	}
 
 	@Override
@@ -32,7 +32,8 @@ public class ProducerSolution implements ApplicationRunner {
 			Map<String, String> message = new HashMap<>();
 			message.put("field1", "value" + index);
 			message.put("field2", String.valueOf(index));
-			String messageId = commands.xadd("my-stream", message);
+			// TODO send message to stream and assign its ID to the messageId variable
+			String messageId = "TBD";
 			log.info("Sent message {} with ID {}", message, messageId);
 			Thread.sleep(3000);
 			index++;

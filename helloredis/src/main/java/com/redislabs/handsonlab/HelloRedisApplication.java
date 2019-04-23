@@ -23,7 +23,8 @@ public class HelloRedisApplication implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		// TODO Set the hello message in Redis
-
+		log.info("Before setting the value");
+		template.opsForValue().set("message", "Hello Redis!");
 		// TODO Retrieve the hello message from Redis
 		String message = "Not yet implemented";
 		log.info(message);

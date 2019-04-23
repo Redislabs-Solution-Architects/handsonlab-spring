@@ -8,9 +8,8 @@
 		<artifactId>handsonlab-streams</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>handsonlab-streams-consumer</artifactId>
-	<name>Hands-On Lab Streams Consumer</name>
-	<description>Redis Las Hands-On Lab Module 3: Streams Consumer</description>
-
+	<artifactId>handsonlab-streams-producer</artifactId>
+	<name>Hands-On Lab Streams Producer</name>
+	<description>Redis Las Hands-On Lab Module 3: Streams Producer</description>
 
 </project>
