@@ -38,22 +38,8 @@ public class ConsumerApplication implements ApplicationRunner {
 		// TODO Use the commands object above to read and print messages
 
 		// Step 2: Listen for messages using a consumer group
-		// TODO Modify the previous to use {@link
-		// io.lettuce.core.api.RedisStreamCommands} xreadgroup
+		// TODO Modify the previous to use xreadgroup
 
-		// add a message to create the stream data structure
-		commands.xadd("my-stream", Collections.singletonMap("key", "value"));
-		// delete group as it may already exist
-		commands.xgroupDestroy("my-stream", "my-group");
-		// add a group pointing to the stream head
-		commands.xgroupCreate(StreamOffset.from("my-stream", "$"), "my-group");
-		Consumer<String> consumer = Consumer.from("my-group", consumerId());
-		XReadArgs xargs = XReadArgs.Builder.block(Duration.ofSeconds(2));
-		StreamOffset<String> stream = StreamOffset.lastConsumed("my-stream");
-		while (true) {
-			List<StreamMessage<String, String>> messages = commands.xreadgroup(consumer, xargs, stream);
-			messages.forEach(m -> log.info("Received message {}", m));
-		}
 	}
 
 	private String consumerId() {
