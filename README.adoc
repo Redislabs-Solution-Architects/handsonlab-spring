@@ -25,9 +25,9 @@ cd <module>
 
 === link:helloredis/README{outfilesuffix}[Hello Redis]
 
-=== link:redisearch/README{outfilesuffix}[Streams]
+=== link:streams/README{outfilesuffix}[Streams]
 
-=== link:streams/README{outfilesuffix}[RediSearch]
+=== link:redisearch/README{outfilesuffix}[RediSearch]
 
  
 == Reference Documentation
